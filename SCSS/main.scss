@@ -1,3 +1,6 @@
+$gray: #6B6B6C;
+
+
 @import './fonts';
 @import './normalize.css';
 
@@ -13,10 +16,40 @@ body {
 }
 
 
+
 .container {
-    min-width: 1440px;
+    max-width: 1440px;
     width: 100%;
     margin: 0 auto;
+}
+
+.profitable-top {
+    background-image: url(../image/Rectangle.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-right: 200px;
+}
+
+
+.profitable-top-title {
+    max-width: 769px;
+    display: flex;
+    align-items: center;
+    background-color: #0B7572;
+    padding: 178px 0 166px 90px;
+    clip-path: polygon(0 0, 60% 0, 100% 100%, 0 100%);
+}
+
+.profitable-top-title{
+
+    h2 {
+    max-width: 362px;
+    font-family: "Exo 2";
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 60px;
+    color: #fff !important;
+    }
 }
 
 .texts {
@@ -36,22 +69,18 @@ body {
         font-weight: 400;
         font-size: 16px;
         line-height: 24px;
-        color: #6B6B6C;
+        color: $gray;
     }
 }
 
 .card_container {
-    margin: 0 auto;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 100px;
 }
 
-.cards {
-    margin: 0 auto;
-}
 
 .card_content {
-    margin: 0 auto;
     max-width: 393px;
     border-radius: 10px;
     -webkit-box-shadow: 1px 5px 18px 0px rgba(191, 191, 191, 1);
@@ -70,7 +99,7 @@ body {
     p {
         max-width: 340px;
         font-family: 'PT Sans', sans-serif;
-        color: #6B6B6C;
+        color: $gray;
         margin-top: 10px;
         padding-inline: 15px;
     }
@@ -159,13 +188,13 @@ body {
         max-width: 568px;
         font-family: 'PT Sans', sans-serif;
         line-height: 24px;
-        color: #6B6B6C;
+        color: $gray;
         margin-top: 20px;
     }
 }
 
 .cards-2 {
-    min-width: 1212px;
+    max-width: 1212px;
     margin: 0 auto;
 }
 
@@ -181,11 +210,10 @@ body {
 }
 
 .unity {
-    min-width: 1212px;
+    max-width: 1212px;
     margin: 0 auto;
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    justify-content: space-between;
 }
 
 .one {
@@ -207,7 +235,7 @@ body {
         font-size: 14px;
         font-weight: 400;
         line-height: 21px;
-        color: #6B6B6C;
+        color: $gray;
         margin-top: 8px;
         text-align: center;
     }
@@ -230,14 +258,39 @@ body {
 .four {
     @extend .one;
     max-width: 225px;
-    text-align: center;
     
     p:nth-of-type(1) {
-        text-align: center;
         max-width: 225px;
     }
 
     p:nth-of-type(2) {
         max-width: 225px;
     }
+}
+
+.binary {
+    max-width: 1212px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.cards-3 {
+    @extend .cards-2;
+}
+
+.five {
+    @extend .one;
+}
+
+.six {
+    @extend .one;
+}
+
+.seven {
+    @extend .one;
+}
+
+.eight {
+    @extend .one;
 }
